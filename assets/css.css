@@ -1,0 +1,86 @@
+/*base styles*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #2D2D2D;
+}
+
+.title {
+    color: #00A26D;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.header {
+    margin-top: 50px;
+    margin-right: 90px;
+    height: 40px;
+    text-align: right;
+}
+
+/*switch btn*/
+.switch-btn {
+    display: inline-block;
+    width: 72px; /* ширина */
+    height: 38px; /* высота */
+    border-radius: 19px; /* радиус скругления */
+    background: #bfbfbf; /* цвет фона */
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms; /* анимация */
+}
+
+.switch-btn::after {
+    content: "";
+    height: 32px; /* высота кнопки */
+    width: 32px; /* ширина кнопки */
+    border-radius: 17px;
+    background: #fff; /* цвет кнопки */
+    top: 3px; /* положение кнопки по вертикали относительно основы */
+    left: 3px; /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 300ms; /* анимация */
+    position: absolute;
+    z-index: 1;
+}
+
+.switch-on {
+    background: #118c4e;
+}
+
+.switch-on::after {
+    left: 37px;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    background-color: rgba(52, 52, 52, 0.43);
+    margin-top: 30px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > span {
+    text-transform: uppercase;
+    filter: opacity(50%);
+    color: #00A26D;
+}
+
+.footer > img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    filter: hue-rotate(160deg) opacity(50%);
+}

@@ -1,0 +1,6 @@
+.control {
+    font-size: 18px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: .2fr;
+}
