@@ -20,18 +20,23 @@ body {
 .title {
     color: #00A26D;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .header {
     display: flex;
-    margin-top: 50px;
-    margin-right: 90px;
-    height: 40px;
+    justify-content: center;
+    margin-top: 11px;
+    margin-bottom: 11px;
     text-align: right;
-    justify-content: flex-end;
     align-items: center;
+}
+
+.header-container {
+    position: fixed;
+    background-color: #2D2D2D;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.39) 0 3px 9px;
 }
 
 @keyframes flow {
@@ -47,10 +52,15 @@ body {
 }
 
 /*switch btn*/
+.switch-container {
+    position: absolute;
+    right: 20px;
+}
+
 .switch-btn {
     display: inline-block;
-    width: 62px; /* ширина */
-    height: 32px; /* высота */
+    width: 60px; /* ширина */
+    height: 30px; /* высота */
     border-radius: 20px; /* радиус скругления */
     background: #bfbfbf; /* цвет фона */
     z-index: 0;
@@ -63,8 +73,8 @@ body {
 
 .switch-btn::after {
     content: "";
-    height: 24px; /* высота кнопки */
-    width: 24px; /* ширина кнопки */
+    height: 22px; /* высота кнопки */
+    width: 22px; /* ширина кнопки */
     border-radius: 17px;
     background: #fff; /* цвет кнопки */
     top: 4px; /* положение кнопки по вертикали относительно основы */
@@ -113,4 +123,8 @@ body {
     width: 30px;
     height: 30px;
     filter: hue-rotate(160deg) opacity(50%);
+}
+
+.main {
+    margin-top: 110px;
 }
