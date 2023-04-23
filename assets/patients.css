@@ -12,7 +12,6 @@
 
 .table {
     width: 100%;
-    border: none;
     margin-bottom: 20px;
 }
 
@@ -26,7 +25,6 @@
 .table thead th {
     font-weight: bold;
     text-align: center;
-    border: none;
     padding: 10px 15px;
     background-color: rgba(0, 162, 109, 1);
     font-size: 14px;
@@ -42,7 +40,6 @@
 
 .table tbody td {
     text-align: center;
-    border: none;
     padding: 10px 15px;
     font-size: 14px;
     vertical-align: top;
@@ -70,6 +67,15 @@
     margin-bottom: 20px;
 }
 
+.table tbody tr:hover {
+    cursor: pointer;
+    background-color: #79b7a3;
+}
+
+.table tbody tr:hover td {
+    transition-duration: .2s;
+}
+
 .link {
     color: #FFFFFF;
     text-decoration: none;
@@ -95,6 +101,7 @@
     background-color: rgba(0, 162, 109, 0.49);
     transition-duration: .3s;
 }
+
 .header {
     display: flex;
 }
