@@ -104,17 +104,19 @@ body {
 .footer > span {
     /*background-color: rgba(0, 162, 109, 0.49);*/
     /*transition-duration: .3s;*/
-    animation: flow 10s ease-in-out infinite;
-    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    animation: flow 8s ease-in-out infinite;
+    /*background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);*/
     /*background: linear-gradient(-60deg, #904e95, #e73c7e, #ee7752);*/
-    background-size: 300%;
+    background: linear-gradient(90deg, #02fca8, #b4b0b0);
+    background-size: 900%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: .2em;
     text-transform: uppercase;
-    filter: opacity(50%);
+    filter: opacity(80%);
     color: #00A26D;
+    /*font-weight: bold;*/
 }
 
 .footer > img {
