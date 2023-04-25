@@ -170,10 +170,12 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #00A26D;
     display: block;
     transition: 0.3s;
+    animation: ease-in;
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
+    border-bottom: 1px solid #00A26D;
 }
 
 .sidenav .closebtn {

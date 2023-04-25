@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 @keyframes flow {
     0% {
         background-position: 0 50%;
@@ -132,3 +136,25 @@
     opacity: 1;
     right: 0;
 }
+
+/*to top*/
+#btn-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    filter: invert(1) opacity(70%) hue-rotate(160deg);
+}
+
+/*#btn-to-top:hover {*/
+/*    */
+/*}*/
