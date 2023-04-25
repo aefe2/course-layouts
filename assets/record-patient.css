@@ -105,3 +105,29 @@
     outline-offset: 0;
     background-color: rgba(0, 162, 109, 0.58);
 }
+
+/**/
+.create-patient-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.create-patient-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.create-patient-btn:hover span {
+    padding-right: 15px;
+}
+
+.create-patient-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}

@@ -76,14 +76,16 @@
     transition-duration: .2s;
 }
 
-.link {
+.create-patient {
+    width: 200px;
     color: #FFFFFF;
-    text-decoration: none;
-    background-color: #00A26D;
-    font-size: 18px;
+    font-size: 16px;
     padding: 8px;
     border-radius: 5px;
+    margin: 10px 0 10px 0;
     cursor: pointer;
+    background-color: #00A26D;
+    border: none;
 }
 
 /*.link:hover {*/
@@ -104,4 +106,29 @@
 
 .header {
     display: flex;
+}
+
+.create-patient span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.create-patient span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.create-patient:hover span {
+    padding-right: 15px;
+}
+
+.create-patient:hover span:after {
+    opacity: 1;
+    right: 0;
 }
