@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/assets/css.css">
     <link rel="stylesheet" href="/assets/patients.css">
+    <script defer src="../js/scripts.js"></script>
     <title>Медкарта</title>
 </head>
 <body>
@@ -165,23 +166,4 @@
     <span>Umbrella Corporation &copy;</span>
 </div>
 </body>
-<script>
-    mybutton = document.getElementById("btn-to-top");
-
-    window.onscroll = function () {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    function topFunction() {
-        document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
-    }
-</script>
 </html>
