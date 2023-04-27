@@ -164,6 +164,17 @@ input[type="search"]::-webkit-search-cancel-button {
     transition: 0.5s;
 }
 
+.nav-bg {
+    filter: opacity(50%);
+    /*transform: rotate(20deg);*/
+    margin-top: 40px;
+    padding: 20px;
+    /*margin-left: 25px;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*z-index: 0;*/
+}
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     font-size: 15px;
@@ -180,6 +191,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .sidenav .closebtn {
     position: absolute;
+    cursor: pointer;
     top: 0;
     right: 25px;
     font-size: 36px;
